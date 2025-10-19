@@ -9,7 +9,6 @@ export const Unit = () => {
         <UnitBanner title={"Income vs Expenditure"} description={"Learn the meaning of Income, Expenditure and how to manage them to keep your money on the way up!"} />
         <div className = "flex items-center flex-col relative">
 
-            return (
                 <LessonButton
                     id="1"
                     index={1}
@@ -19,7 +18,6 @@ export const Unit = () => {
                     percentage = {40}
                     isCompleted = {false}
                 />
-            )
 
         </div>
 

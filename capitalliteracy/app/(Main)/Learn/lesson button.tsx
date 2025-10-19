@@ -81,10 +81,3 @@ export const LessonButton = ({id, index, current, percentage, locked, isComplete
 
     );
 };
-/*<Icon 
-                                className={cn(
-                                    "h-10 w-10",
-                                    locked ? "fill-neutral-400 text-neutral-400 stroke-neutral-400" : "fill-primary-foreground text-primary-foreground",
-                                    isCompleted && "fill-none stroke-[4]"
-                                )}
-                            />*/

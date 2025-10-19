@@ -19,6 +19,7 @@ const active = pathname === href;
         <Button variant = {active ? "sidebarOutline" : "sidebar"} className="justify-start h-[52px]" asChild>
             <Link href={href}>
                 <Image src = {iconSrc} alt= {label} className = "mr-5" height = {32} width = {32}/>
+                {label}
             </Link>
         </Button>
     )

@@ -10,16 +10,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         // Create a kind of 3D button effect
-        default: "bg-white text-black border-slate-200 border-2 border-b-4 active:border-b-2 hover:bg-slate-100 text-slate-500",
-        primary: "bg-sky-400 text-primary-foreground hover:bg-sky-400/90 border-sky-500 border-b-4 active:border-b-0",
-        primaryOutline: "bg-white text-sky-500 hover:bg-slate-100",
-        secondary: "bg-purple-400 text-primary-foreground hover:bg-purple-400/90 border-purple-500 border-b-4 active:border-b-0",
-        secondaryOutline: "bg-white text-purple-500 hover:bg-slate-100",
-        danger: "bg-rose-400 text-primary-foreground hover:bg-rose-400/90 border-rose-500 border-b-4 active:border-b-0",
-        dangerOutline: "bg-white text-rose-500 hover:bg-slate-100",
-        ghost: "bg-transparent text-slate-500 border-transparent border-0 hover:bg-slate-100",
-        sidebar: "bg-transparent text-slate-500 border-transparent border-2 hover:bg-slate-100 transition-none",
-        sidebarOutline: "bg-sky-500/15 text-sky-500 border-sky-300 border-2 hover:bg-sky-500/20 transition-none",
+        default: "bg-white text-black border-slate-200 border-2 border-b-4 active:border-b-2 hover:bg-slate-100 text-slate-500 font-bold",
+        primary: "bg-sky-400 text-primary-foreground hover:bg-sky-400/90 border-sky-500 border-b-4 active:border-b-0 font-bold",
+        primaryOutline: "bg-white text-sky-500 hover:bg-slate-100 font-bold",
+        secondary: "bg-purple-400 text-primary-foreground hover:bg-purple-400/90 border-purple-500 border-b-4 active:border-b-0 font-bold",
+        secondaryOutline: "bg-white text-purple-500 hover:bg-slate-100 font-bold",
+        danger: "bg-rose-400 text-primary-foreground hover:bg-rose-400/90 border-rose-500 border-b-4 active:border-b-0 font-bold",
+        dangerOutline: "bg-white text-rose-500 hover:bg-slate-100 font-bold",
+        ghost: "bg-transparent text-slate-500 border-transparent border-0 hover:bg-slate-100 font-bold",
+        sidebar: "bg-transparent text-slate-500 border-transparent border-2 hover:bg-slate-100 transition-none font-bold",
+        sidebarOutline: "bg-sky-500/15 text-sky-500 border-sky-300 border-2 hover:bg-sky-500/20 transition-none font-bold",
       },
       size: {
         default: "h-11 px-4 py-2 has-[>svg]:px-3",

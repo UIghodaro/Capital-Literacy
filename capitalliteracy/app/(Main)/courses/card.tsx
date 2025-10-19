@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type Props = {
     title: string;
@@ -26,16 +28,18 @@ export const Card =({ title, id, imageSrc, onClick, active, disabled}: Props) =>
                 </div>
             )}
         </div>
+            <Link href = "/Learn">
             <Image 
                 src={imageSrc}
                 alt={title}
                 height={70}
                 width={93.33}
                 className="rounded-lg drop-shadow-md border object-cover"
-            />
+                />
             <p className="text-neutral-700 text-center font-bold mt-3">
                 {title}
             </p>
+            </Link>
         </div>
     );
 };

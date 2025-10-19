@@ -3,8 +3,17 @@ import { userProgress } from "@/db/schema";
 import { List } from "./list";
 
 const CoursesPage = async () => {
-    const courses = await getCourses();
-    const userProgress =  await getUserProgress();
+    const coursesData = await getCourses();
+    const userProgressData =  await getUserProgress();
+
+    const [
+        courses,
+        userProgress,
+    ] = await Promise.all([
+        coursesData,
+        userProgressData
+    ]);
+
 
     return (
         <div className="h-full max-w-[912px] px-3 mx-auto">

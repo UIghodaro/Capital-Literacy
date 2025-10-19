@@ -14,7 +14,7 @@ export default function Home() {
         </h1>
         <div>
           <Button asChild size = "lg" variant = "secondary" className = "w-full">
-            <Link href="/Learn">
+            <Link href="/courses">
               Get Started
             </Link>
           </Button>

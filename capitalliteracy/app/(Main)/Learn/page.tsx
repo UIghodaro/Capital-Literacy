@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import { UserProgress } from "@/components/ui/user progress";
 import { getUserProgress } from "@/db/queries";
 import { redirect } from "next/navigation";
+import { Unit } from "./unit";
 
 const LearnPage = async () => {
     const userProgressData = getUserProgress();
@@ -11,10 +12,6 @@ const LearnPage = async () => {
     const [
         userProgress
     ] = await Promise.all([userProgressData])
-
-    if (!userProgress || !userProgress.activeCourse) {
-        redirect("/courses");
-    }
 
 
     return (
@@ -28,6 +25,7 @@ const LearnPage = async () => {
             </StickyWrapper> 
             <FeedWrapper>
                 <Header title = "Income vs Expenditure"/>
+                <Unit />
             </FeedWrapper>
         </div>
     );
